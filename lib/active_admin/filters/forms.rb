@@ -30,8 +30,10 @@ module ActiveAdmin
           case column.type
           when :date, :datetime
             :date_range
-          when :string, :text
+          when :string
             :string
+          when :text
+            :text
           when :integer, :float, :decimal
             :numeric
           when :boolean
